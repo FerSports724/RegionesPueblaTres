@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FdW-eF-YgA">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--REGIONES SOCIOECONÓMICAS-->
+        <scene sceneID="nlx-ae-54x">
+            <objects>
+                <tableViewController id="ht2-qw-flW" customClass="iPadViewController" customModule="RegionesPuebla" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="225" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vj6-Ta-fJG">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaRegionesiPad" id="gQL-ED-1xR" customClass="celdaRegioniPad" customModule="RegionesPuebla" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="1112" height="225"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gQL-ED-1xR" id="Xuf-QI-LiL">
+                                    <rect key="frame" x="0.0" y="0.0" width="1112" height="225"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QrV-HW-7sK">
+                                            <rect key="frame" x="0.0" y="0.0" width="1112" height="224.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="QrV-HW-7sK" firstAttribute="leading" secondItem="Xuf-QI-LiL" secondAttribute="leading" id="YOu-d6-KeM"/>
+                                        <constraint firstAttribute="trailing" secondItem="QrV-HW-7sK" secondAttribute="trailing" id="doV-AW-wj7"/>
+                                        <constraint firstItem="QrV-HW-7sK" firstAttribute="top" secondItem="Xuf-QI-LiL" secondAttribute="top" id="tSm-TR-uaj"/>
+                                        <constraint firstAttribute="bottom" secondItem="QrV-HW-7sK" secondAttribute="bottom" id="zGS-hp-waL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imagen2" destination="QrV-HW-7sK" id="Rer-sx-ZXk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ht2-qw-flW" id="8ZT-q7-FzI"/>
+                            <outlet property="delegate" destination="ht2-qw-flW" id="9re-yQ-0sf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="REGIONES SOCIOECONÓMICAS" id="1hr-hb-vZa"/>
+                    <connections>
+                        <outlet property="tableView" destination="Vj6-Ta-fJG" id="c3F-Bq-tAH"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CwV-N8-lqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="-244"/>
+        </scene>
+        <!--Regiones-->
+        <scene sceneID="Qnc-aY-5it">
+            <objects>
+                <navigationController id="3Fz-v4-tu2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Regiones" image="Regiones" id="feL-bF-7CL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ed5-tI-mbw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ht2-qw-flW" kind="relationship" relationship="rootViewController" id="ZJG-y4-yaA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CvW-GL-SMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-244"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Tc4-ju-7RC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FdW-eF-YgA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6Bd-mu-J9K">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3Fz-v4-tu2" kind="relationship" relationship="viewControllers" id="WZX-Yo-2fy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAR-QO-j2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-567.20000000000005" y="-243.32833583208398"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Regiones" width="25" height="25"/>
+    </resources>
+</document>
