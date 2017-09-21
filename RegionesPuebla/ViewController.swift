@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
     @IBOutlet var tableView: UITableView!
     
     var tablaRegion:[modeloRegiones] = []
@@ -46,7 +45,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
 
 extension ViewController: UITableViewDelegate{
@@ -77,10 +75,10 @@ extension ViewController: UITableViewDelegate{
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "pantallaInfo"{
+        if segue.identifier == "segundaPantalla"{
             if let indexPath = self.tableView.indexPathForSelectedRow{
                 let selectedRegion = self.tablaRegion[indexPath.row]
-                let destinationVC = segue.destination as! detailViewController
+                let destinationVC = segue.destination as! secondViewController
                 destinationVC.regionSelected = selectedRegion
             }
         }

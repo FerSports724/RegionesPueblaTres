@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1666D2491F5843A10021CADB /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1666D2481F5843A10021CADB /* detailViewController.swift */; };
-		1666D24B1F58516E0021CADB /* celdaDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1666D24A1F58516D0021CADB /* celdaDetalle.swift */; };
 		1666D24D1F5863CC0021CADB /* modeloDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1666D24C1F5863CC0021CADB /* modeloDetalle.swift */; };
 		167645271F505FB20011A76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167645261F505FB20011A76D /* Assets.xcassets */; };
 		1685CC991F4F1F8900CC7E69 /* modeloRegiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685CC981F4F1F8900CC7E69 /* modeloRegiones.swift */; };
 		1685CC9B1F4F271100CC7E69 /* celdaRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685CC9A1F4F271100CC7E69 /* celdaRegion.swift */; };
 		1685CC9D1F4F60E000CC7E69 /* iPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685CC9C1F4F60E000CC7E69 /* iPadViewController.swift */; };
 		1685CC9F1F4F64BF00CC7E69 /* celdaRegioniPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685CC9E1F4F64BF00CC7E69 /* celdaRegioniPad.swift */; };
+		168DECED1F714E5200337A17 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DECEC1F714E5200337A17 /* secondViewController.swift */; };
+		168DECEF1F71625900337A17 /* datosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DECEE1F71625900337A17 /* datosViewController.swift */; };
+		168DECF11F71627800337A17 /* atractivosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168DECF01F71627800337A17 /* atractivosViewController.swift */; };
 		16AD23641F4CACED00EF0140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AD23631F4CACED00EF0140 /* AppDelegate.swift */; };
 		16AD23661F4CACED00EF0140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AD23651F4CACED00EF0140 /* ViewController.swift */; };
 		16AD23691F4CACED00EF0140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AD23671F4CACED00EF0140 /* Main.storyboard */; };
 		16AD236C1F4CACED00EF0140 /* RegionesPuebla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 16AD236A1F4CACED00EF0140 /* RegionesPuebla.xcdatamodeld */; };
 		16AD23711F4CACED00EF0140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AD236F1F4CACED00EF0140 /* LaunchScreen.storyboard */; };
 		16AD23791F4CAD7900EF0140 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AD23781F4CAD7900EF0140 /* iPad.storyboard */; };
-		16E0E9331F682A2400E61C67 /* pantallaMenuDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E0E9321F682A2400E61C67 /* pantallaMenuDos.swift */; };
-		16E0E9351F6863B900E61C67 /* celdaMenuDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E0E9341F6863B900E61C67 /* celdaMenuDos.swift */; };
 		16E334D31F69699300FFCDCC /* modeloMenuDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E334D21F69699300FFCDCC /* modeloMenuDos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1666D2481F5843A10021CADB /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
-		1666D24A1F58516D0021CADB /* celdaDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaDetalle.swift; sourceTree = "<group>"; };
 		1666D24C1F5863CC0021CADB /* modeloDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modeloDetalle.swift; sourceTree = "<group>"; };
 		167645261F505FB20011A76D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1685CC981F4F1F8900CC7E69 /* modeloRegiones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modeloRegiones.swift; sourceTree = "<group>"; };
 		1685CC9A1F4F271100CC7E69 /* celdaRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaRegion.swift; sourceTree = "<group>"; };
 		1685CC9C1F4F60E000CC7E69 /* iPadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadViewController.swift; sourceTree = "<group>"; };
 		1685CC9E1F4F64BF00CC7E69 /* celdaRegioniPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaRegioniPad.swift; sourceTree = "<group>"; };
+		168DECEC1F714E5200337A17 /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		168DECEE1F71625900337A17 /* datosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = datosViewController.swift; sourceTree = "<group>"; };
+		168DECF01F71627800337A17 /* atractivosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = atractivosViewController.swift; sourceTree = "<group>"; };
 		16AD23601F4CACED00EF0140 /* RegionesPuebla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegionesPuebla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16AD23631F4CACED00EF0140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16AD23651F4CACED00EF0140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,8 +43,6 @@
 		16AD23701F4CACED00EF0140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16AD23721F4CACED00EF0140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16AD23781F4CAD7900EF0140 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
-		16E0E9321F682A2400E61C67 /* pantallaMenuDos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = pantallaMenuDos.swift; path = ../pantallaMenuDos.swift; sourceTree = "<group>"; };
-		16E0E9341F6863B900E61C67 /* celdaMenuDos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = celdaMenuDos.swift; sourceTree = "<group>"; };
 		16E334D21F69699300FFCDCC /* modeloMenuDos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modeloMenuDos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,10 +83,9 @@
 				16AD23671F4CACED00EF0140 /* Main.storyboard */,
 				16AD23651F4CACED00EF0140 /* ViewController.swift */,
 				1685CC9A1F4F271100CC7E69 /* celdaRegion.swift */,
-				1666D2481F5843A10021CADB /* detailViewController.swift */,
-				1666D24A1F58516D0021CADB /* celdaDetalle.swift */,
-				16E0E9321F682A2400E61C67 /* pantallaMenuDos.swift */,
-				16E0E9341F6863B900E61C67 /* celdaMenuDos.swift */,
+				168DECEC1F714E5200337A17 /* secondViewController.swift */,
+				168DECEE1F71625900337A17 /* datosViewController.swift */,
+				168DECF01F71627800337A17 /* atractivosViewController.swift */,
 				167645261F505FB20011A76D /* Assets.xcassets */,
 				16AD23781F4CAD7900EF0140 /* iPad.storyboard */,
 				1685CC9C1F4F60E000CC7E69 /* iPadViewController.swift */,
@@ -127,7 +124,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Fernando Vazquez Bernal";
 				TargetAttributes = {
 					16AD235F1F4CACED00EF0140 = {
@@ -174,19 +171,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1666D24B1F58516E0021CADB /* celdaDetalle.swift in Sources */,
+				168DECEF1F71625900337A17 /* datosViewController.swift in Sources */,
 				1666D24D1F5863CC0021CADB /* modeloDetalle.swift in Sources */,
-				16E0E9331F682A2400E61C67 /* pantallaMenuDos.swift in Sources */,
 				1685CC9B1F4F271100CC7E69 /* celdaRegion.swift in Sources */,
 				16AD23661F4CACED00EF0140 /* ViewController.swift in Sources */,
-				16E0E9351F6863B900E61C67 /* celdaMenuDos.swift in Sources */,
+				168DECF11F71627800337A17 /* atractivosViewController.swift in Sources */,
 				16AD23641F4CACED00EF0140 /* AppDelegate.swift in Sources */,
 				16AD236C1F4CACED00EF0140 /* RegionesPuebla.xcdatamodeld in Sources */,
 				1685CC9F1F4F64BF00CC7E69 /* celdaRegioniPad.swift in Sources */,
 				16E334D31F69699300FFCDCC /* modeloMenuDos.swift in Sources */,
 				1685CC9D1F4F60E000CC7E69 /* iPadViewController.swift in Sources */,
+				168DECED1F714E5200337A17 /* secondViewController.swift in Sources */,
 				1685CC991F4F1F8900CC7E69 /* modeloRegiones.swift in Sources */,
-				1666D2491F5843A10021CADB /* detailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +218,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -230,7 +228,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -273,7 +275,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -281,7 +285,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

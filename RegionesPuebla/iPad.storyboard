@@ -60,7 +60,7 @@
             <objects>
                 <navigationController id="3Fz-v4-tu2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Regiones" image="Regiones" id="feL-bF-7CL"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ed5-tI-mbw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ed5-tI-mbw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
