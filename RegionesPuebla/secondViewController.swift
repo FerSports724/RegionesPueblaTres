@@ -23,24 +23,21 @@ class secondViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        /*View Controller de datos generales*/
         if segue.identifier == "pantallaDatos"{
-                let destinationVC = segue.destination as! datosViewController
-                destinationVC.miRegion = 
-            }
+            let destinationVC = segue.destination as! datosViewController
+            destinationVC.miRegion = regionSelected.shortName
         }
-
         
-    }*/
-
-    
-    @IBAction func botonDatos(_ sender: UIButton) {
-        
-    }
-    
-    
-    @IBAction func botonAtractivos(_ sender: UIButton) {
+        /*View Controller de atractivos*/
+        if segue.identifier == "pantallaAtractivos"{
+            let destinationVC2 = segue.destination as! atractivosViewController
+            destinationVC2.regionSeleccionada = regionSelected.shortName
+            destinationVC2.numOfAtr = regionSelected.numItems
+            destinationVC2.idRegion = regionSelected.id
+        }
     }
 
 }

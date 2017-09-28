@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1665C5761F7ACA160033824A /* celdaAtractivos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1665C5751F7ACA160033824A /* celdaAtractivos.swift */; };
 		1666D24D1F5863CC0021CADB /* modeloDetalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1666D24C1F5863CC0021CADB /* modeloDetalle.swift */; };
 		167645271F505FB20011A76D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167645261F505FB20011A76D /* Assets.xcassets */; };
 		1685CC991F4F1F8900CC7E69 /* modeloRegiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685CC981F4F1F8900CC7E69 /* modeloRegiones.swift */; };
@@ -23,9 +24,11 @@
 		16AD23711F4CACED00EF0140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AD236F1F4CACED00EF0140 /* LaunchScreen.storyboard */; };
 		16AD23791F4CAD7900EF0140 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16AD23781F4CAD7900EF0140 /* iPad.storyboard */; };
 		16E334D31F69699300FFCDCC /* modeloMenuDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E334D21F69699300FFCDCC /* modeloMenuDos.swift */; };
+		16F8525F1F7ADD1D00BBBFBC /* modeloAtractivos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F8525E1F7ADD1D00BBBFBC /* modeloAtractivos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1665C5751F7ACA160033824A /* celdaAtractivos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celdaAtractivos.swift; sourceTree = "<group>"; };
 		1666D24C1F5863CC0021CADB /* modeloDetalle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modeloDetalle.swift; sourceTree = "<group>"; };
 		167645261F505FB20011A76D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1685CC981F4F1F8900CC7E69 /* modeloRegiones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modeloRegiones.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		16AD23721F4CACED00EF0140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16AD23781F4CAD7900EF0140 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
 		16E334D21F69699300FFCDCC /* modeloMenuDos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modeloMenuDos.swift; sourceTree = "<group>"; };
+		16F8525E1F7ADD1D00BBBFBC /* modeloAtractivos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modeloAtractivos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +84,14 @@
 				1685CC981F4F1F8900CC7E69 /* modeloRegiones.swift */,
 				1666D24C1F5863CC0021CADB /* modeloDetalle.swift */,
 				16E334D21F69699300FFCDCC /* modeloMenuDos.swift */,
+				16F8525E1F7ADD1D00BBBFBC /* modeloAtractivos.swift */,
 				16AD23671F4CACED00EF0140 /* Main.storyboard */,
 				16AD23651F4CACED00EF0140 /* ViewController.swift */,
 				1685CC9A1F4F271100CC7E69 /* celdaRegion.swift */,
 				168DECEC1F714E5200337A17 /* secondViewController.swift */,
 				168DECEE1F71625900337A17 /* datosViewController.swift */,
 				168DECF01F71627800337A17 /* atractivosViewController.swift */,
+				1665C5751F7ACA160033824A /* celdaAtractivos.swift */,
 				167645261F505FB20011A76D /* Assets.xcassets */,
 				16AD23781F4CAD7900EF0140 /* iPad.storyboard */,
 				1685CC9C1F4F60E000CC7E69 /* iPadViewController.swift */,
@@ -130,6 +136,7 @@
 					16AD235F1F4CACED00EF0140 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 738YZJQJ3T;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -172,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				168DECEF1F71625900337A17 /* datosViewController.swift in Sources */,
+				1665C5761F7ACA160033824A /* celdaAtractivos.swift in Sources */,
 				1666D24D1F5863CC0021CADB /* modeloDetalle.swift in Sources */,
 				1685CC9B1F4F271100CC7E69 /* celdaRegion.swift in Sources */,
 				16AD23661F4CACED00EF0140 /* ViewController.swift in Sources */,
@@ -181,6 +189,7 @@
 				1685CC9F1F4F64BF00CC7E69 /* celdaRegioniPad.swift in Sources */,
 				16E334D31F69699300FFCDCC /* modeloMenuDos.swift in Sources */,
 				1685CC9D1F4F60E000CC7E69 /* iPadViewController.swift in Sources */,
+				16F8525F1F7ADD1D00BBBFBC /* modeloAtractivos.swift in Sources */,
 				168DECED1F714E5200337A17 /* secondViewController.swift in Sources */,
 				1685CC991F4F1F8900CC7E69 /* modeloRegiones.swift in Sources */,
 			);
@@ -255,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -306,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -321,11 +330,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 738YZJQJ3T;
 				INFOPLIST_FILE = RegionesPuebla/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devfvb.RegionesPuebla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -335,11 +345,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 738YZJQJ3T;
 				INFOPLIST_FILE = RegionesPuebla/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devfvb.RegionesPuebla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

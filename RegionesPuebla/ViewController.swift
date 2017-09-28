@@ -17,25 +17,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var miRegion = modeloRegiones(id: 1, nombre: "Sierra Norte", imagen: #imageLiteral(resourceName: "regionNorte"), numItems: 3, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"norte")
+        var miRegion = modeloRegiones(id: 1, nombre: "Sierra Norte", imagen: #imageLiteral(resourceName: "regionNorte"), numItems: 5, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Norte")
         tablaRegion.append(miRegion)
         
-        miRegion = modeloRegiones(id: 2, nombre: "Sierra Nororiental", imagen: #imageLiteral(resourceName: "regionNororiental"), numItems: 3, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"nororiental")
+        miRegion = modeloRegiones(id: 2, nombre: "Sierra Nororiental", imagen: #imageLiteral(resourceName: "regionNororiental"), numItems: 4, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Nororiental")
         tablaRegion.append(miRegion)
         
-        miRegion = modeloRegiones(id: 3, nombre: "Valle de Serdán", imagen: #imageLiteral(resourceName: "regionSerdan"), numItems: 3, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"serdan")
+        miRegion = modeloRegiones(id: 3, nombre: "Valle de Serdán", imagen: #imageLiteral(resourceName: "regionSerdan"), numItems: 5, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Serdan")
         tablaRegion.append(miRegion)
         
-        miRegion = modeloRegiones(id: 4, nombre: "Angelópolis", imagen: #imageLiteral(resourceName: "regionAngelopolis"), numItems: 3, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"angelopolis")
+        miRegion = modeloRegiones(id: 4, nombre: "Angelópolis", imagen: #imageLiteral(resourceName: "regionAngelopolis"), numItems: 7, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Angelopolis")
         tablaRegion.append(miRegion)
         
-        miRegion = modeloRegiones(id: 5, nombre: "Valle de Atlixco", imagen: #imageLiteral(resourceName: "regionAtlixco"), numItems: 3, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"atlixco")
+        miRegion = modeloRegiones(id: 5, nombre: "Valle de Atlixco", imagen: #imageLiteral(resourceName: "regionAtlixco"), numItems: 4, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Atlixco")
         tablaRegion.append(miRegion)
         
-        miRegion = modeloRegiones(id: 6, nombre: "Mixteca", imagen: #imageLiteral(resourceName: "regionMixteca"), numItems: 3, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"mixteca")
+        miRegion = modeloRegiones(id: 6, nombre: "Mixteca", imagen: #imageLiteral(resourceName: "regionMixteca"), numItems: 4, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Mixteca")
         tablaRegion.append(miRegion)
         
-        miRegion = modeloRegiones(id: 7, nombre: "Tehuacán-Sierra Negra", imagen: #imageLiteral(resourceName: "regionTehuacan"), numItems: 3, imagenDetalle: #imageLiteral(resourceName: "imgTehuacanGeneral"), shortName:"tehuacan")
+        miRegion = modeloRegiones(id: 7, nombre: "Tehuacán-Sierra Negra", imagen: #imageLiteral(resourceName: "regionTehuacan"), numItems: 6, imagenDetalle: #imageLiteral(resourceName: "imgTehuacanGeneral"), shortName:"Tehuacan")
         tablaRegion.append(miRegion)
         
     }
@@ -64,13 +64,6 @@ extension ViewController: UITableViewDelegate{
         let miCelda = self.tableView.dequeueReusableCell(withIdentifier: regionID, for: indexPath) as! celdaRegion
         miCelda.imagen.image = laRegion.imagen
         return miCelda
-        
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let elemento1 = self.tablaRegion[indexPath.row]
-        print("\(elemento1.id!)")
         
     }
     

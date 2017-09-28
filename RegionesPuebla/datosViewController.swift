@@ -10,16 +10,26 @@ import UIKit
 
 class datosViewController: UIViewController {
     
+    @IBOutlet var imagenDatos: UIImageView!
+    
     var miRegion = String()
+    var nombreImagen = String()
+    var imageToAdd:UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("\(miRegion)")
-        
+        loadImage(nombreImg: nombreImagen)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func loadImage(nombreImg:String){
+        var nameImage = ""
+        nameImage = "datos" + "\(miRegion)"
+        imageToAdd = UIImage(named: nameImage)
+        imagenDatos.image = imageToAdd
     }
 
 }
