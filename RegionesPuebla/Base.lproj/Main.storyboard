@@ -8,11 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Regiones-->
         <scene sceneID="xZT-2R-vPz">
@@ -85,7 +80,9 @@
                             <constraint firstItem="d6a-1u-cxJ" firstAttribute="top" secondItem="RQB-3A-BUJ" secondAttribute="top" id="esZ-QL-tsl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="REGIONES SOCIOECONÓMICAS" id="jCe-1K-NKq"/>
+                    <navigationItem key="navigationItem" title="REGIONES SOCIOECONÓMICAS" id="jCe-1K-NKq">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="B8Q-mR-RGh"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="d6a-1u-cxJ" id="NeY-A6-OmY"/>
                     </connections>
@@ -164,16 +161,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IV8-SH-EWS">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IV8-SH-EWS">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aquí va esto =)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJU-s5-2v4">
-                                                    <rect key="frame" x="97" y="31" width="220" height="39"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="IV8-SH-EWS" secondAttribute="bottom" id="0Sc-02-sI8"/>
@@ -184,7 +174,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imagenAtr" destination="IV8-SH-EWS" id="c81-Eg-PZx"/>
-                                            <outlet property="labelTexto" destination="sJU-s5-2v4" id="Car-Js-V9G"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -219,28 +208,54 @@
                         <viewControllerLayoutGuide type="bottom" id="evP-ho-7XJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nDH-kc-pZl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xLh-eP-UBZ">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oza-e9-kvX">
+                                <rect key="frame" x="0.0" y="64" width="414" height="936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeN-3s-6Fv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y4R-QC-aBZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Y4R-QC-aBZ" secondAttribute="trailing" id="19L-yN-7bK"/>
+                                            <constraint firstItem="Y4R-QC-aBZ" firstAttribute="top" secondItem="BeN-3s-6Fv" secondAttribute="top" id="9WU-Sv-W7f"/>
+                                            <constraint firstItem="Y4R-QC-aBZ" firstAttribute="leading" secondItem="BeN-3s-6Fv" secondAttribute="leading" id="Bev-dp-act"/>
+                                            <constraint firstAttribute="bottom" secondItem="Y4R-QC-aBZ" secondAttribute="bottom" id="UEW-gz-v6r"/>
+                                            <constraint firstAttribute="height" constant="1000" id="udf-CK-MMk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BeN-3s-6Fv" firstAttribute="top" secondItem="Oza-e9-kvX" secondAttribute="top" id="0v3-t4-YHj"/>
+                                    <constraint firstItem="BeN-3s-6Fv" firstAttribute="leading" secondItem="Oza-e9-kvX" secondAttribute="leading" id="M3v-dD-aeN"/>
+                                    <constraint firstAttribute="bottom" secondItem="BeN-3s-6Fv" secondAttribute="bottom" id="iVk-qW-8xa"/>
+                                    <constraint firstAttribute="trailing" secondItem="BeN-3s-6Fv" secondAttribute="trailing" id="qHG-rU-dbv"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="evP-ho-7XJ" firstAttribute="top" secondItem="xLh-eP-UBZ" secondAttribute="bottom" id="K2E-rK-OLE"/>
-                            <constraint firstAttribute="trailing" secondItem="xLh-eP-UBZ" secondAttribute="trailing" id="PeW-lx-SiI"/>
-                            <constraint firstItem="xLh-eP-UBZ" firstAttribute="leading" secondItem="nDH-kc-pZl" secondAttribute="leading" id="RTU-oA-7fw"/>
-                            <constraint firstItem="xLh-eP-UBZ" firstAttribute="top" secondItem="So6-ER-jnS" secondAttribute="bottom" id="cC4-ul-96e"/>
+                            <constraint firstItem="BeN-3s-6Fv" firstAttribute="width" secondItem="nDH-kc-pZl" secondAttribute="width" id="MZp-Zt-Wcj"/>
+                            <constraint firstItem="Oza-e9-kvX" firstAttribute="top" secondItem="So6-ER-jnS" secondAttribute="bottom" id="Stx-1K-ww1"/>
+                            <constraint firstAttribute="trailing" secondItem="Oza-e9-kvX" secondAttribute="trailing" id="YXJ-tu-g61"/>
+                            <constraint firstItem="Oza-e9-kvX" firstAttribute="leading" secondItem="nDH-kc-pZl" secondAttribute="leading" id="bL9-zL-6r6"/>
+                            <constraint firstAttribute="bottom" secondItem="Oza-e9-kvX" secondAttribute="bottom" id="bVh-3D-fG1"/>
                         </constraints>
                     </view>
+                    <size key="freeformSize" width="414" height="1000"/>
                     <connections>
-                        <outlet property="imagenDatos" destination="xLh-eP-UBZ" id="Kut-Ku-Lhe"/>
+                        <outlet property="imagenDatos" destination="Y4R-QC-aBZ" id="krn-Bi-qla"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMf-AA-AtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3476.811594202899" y="-253.53260869565219"/>
+            <point key="canvasLocation" x="3476.811594202899" y="-541.304347826087"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bLn-PQ-BhQ">

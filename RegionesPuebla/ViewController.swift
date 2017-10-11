@@ -26,16 +26,16 @@ class ViewController: UIViewController {
         miRegion = modeloRegiones(id: 3, nombre: "Valle de Serdán", imagen: #imageLiteral(resourceName: "regionSerdan"), numItems: 5, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Serdan")
         tablaRegion.append(miRegion)
         
-        miRegion = modeloRegiones(id: 4, nombre: "Angelópolis", imagen: #imageLiteral(resourceName: "regionAngelopolis"), numItems: 7, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Angelopolis")
+        miRegion = modeloRegiones(id: 4, nombre: "Angelópolis", imagen: #imageLiteral(resourceName: "regionAngelopolis"), numItems: 8, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Angelopolis")
         tablaRegion.append(miRegion)
         
-        miRegion = modeloRegiones(id: 5, nombre: "Valle de Atlixco", imagen: #imageLiteral(resourceName: "regionAtlixco"), numItems: 4, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Atlixco")
+        miRegion = modeloRegiones(id: 5, nombre: "Valle de Atlixco", imagen: #imageLiteral(resourceName: "regionAtlixco"), numItems: 5, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Atlixco")
         tablaRegion.append(miRegion)
         
         miRegion = modeloRegiones(id: 6, nombre: "Mixteca", imagen: #imageLiteral(resourceName: "regionMixteca"), numItems: 4, imagenDetalle: #imageLiteral(resourceName: "imgAtlixcoGeneral"), shortName:"Mixteca")
         tablaRegion.append(miRegion)
         
-        miRegion = modeloRegiones(id: 7, nombre: "Tehuacán-Sierra Negra", imagen: #imageLiteral(resourceName: "regionTehuacan"), numItems: 6, imagenDetalle: #imageLiteral(resourceName: "imgTehuacanGeneral"), shortName:"Tehuacan")
+        miRegion = modeloRegiones(id: 7, nombre: "Tehuacán-Sierra Negra", imagen: #imageLiteral(resourceName: "regionTehuacan"), numItems: 7, imagenDetalle: #imageLiteral(resourceName: "imgTehuacanGeneral"), shortName:"Tehuacan")
         tablaRegion.append(miRegion)
         
     }

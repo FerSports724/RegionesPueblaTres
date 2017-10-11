@@ -14,6 +14,10 @@ class atractivosViewController: UIViewController {
     
     var tablaAtractivos:[modeloAtractivos] = []
     
+    var laImagen:UIImage!
+    var nombreImg:String!
+    var elNombre = String()
+    
     var regionSeleccionada = String()
     var numOfAtr:Int?
     var idRegion:Int?
@@ -23,15 +27,22 @@ class atractivosViewController: UIViewController {
     
     /*Array que contienen los nombres de los atractivos*/
     let arrayNorte:[String] = ["Zacatlan", "Chignahuapan", "Huauchinango", "Xicotepec", "Pahuatlán"]
-    let arrayNororiental:[String] = ["Cuetzalan", "Zacapoaxtla", "ZapotitlanMendez", "Tlatlauquitepec"]
-    let arraySerdan:[String] = ["Chalchicomula", "Tecamachalco", "Tepeyahualco", "Atzitzintla", "Acatzingo"]
-    let arrayAngelopolis:[String] = ["Puebla", "Cholula", "Tecali", "Cuautinchan", "Huejotzingo", "Tepeaca", "Calpan"]
-    let arrayAtlixco:[String] = ["Atlixco", "Huaquechula", "Tochimilco", "Izucar"]
-    let arrayMixteca:[String] = ["Acatlan", "TepexiRodriguez", "Huatlatlauca", "Molcaxac"]
-    let arrayTehuacan:[String] = ["Zoquitlan", "Tehuacan", "Tlacotepec", "ZapotitlanSalinas", "SanJuanRaya", "SanBernardinoLagunas"]
+    let arrayNororiental:[String] = ["Cuetzalan", "Yohualichan", "Zacapoaxtla", "Tlatlauquitepec"]
+    let arraySerdan:[String] = ["Aljojuca", "Chalchicomula", "Atzitzintla", "Tecamachalco", "Tepeyahualco"]
+    let arrayAngelopolis:[String] = ["Puebla", "SanAndresCholula", "SanPedroCholula", "Cuautinchan", "Tecali", "Huejotzingo", "Tepeaca", "Calpan"]
+    let arrayAtlixco:[String] = ["Atlixco", "Huaquechula", "Izucar", "Tochimilco", "Tepapayeca"]
+    let arrayMixteca:[String] = ["Huatlatlauca", "Acatlan", "Tepexi", "Molcaxac"]
+    let arrayTehuacan:[String] = ["Tehuacan", "Zapotitlan", "SanJuanRaya", "Zoquitlan", "SanBernardinoLagunas", "Coxcatlan", "Tlacotepec"]
+    
+    /*Array con el número de atractivos que tendrá cada elemento de cada región*/
+    let arrayNorteInt:[Int] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*TÍTULO DE BARRA DE NAVEGACIÓN*/
+        self.title = "ATRACTIVOS"
+        
         print("\(numOfAtr ?? 0)")
         armarArray()
         
@@ -77,7 +88,13 @@ class atractivosViewController: UIViewController {
             print(x)
             print(arrayParaPoner[x])
             
-            miTablaDeAtractivos = modeloAtractivos(nombreRegion: arrayParaPoner[x], numOfAtr: x)
+            nombreImg = ""
+            nombreImg = "atr" + "\(elNombre)" + "\(x)" + ".jpg"
+            print("\(nombreImg!)")
+            
+            laImagen = UIImage(named: nombreImg)
+            
+            miTablaDeAtractivos = modeloAtractivos(nombreRegion: arrayParaPoner[x], numOfAtr: x, imagen:laImagen)
             tablaAtractivos.append(miTablaDeAtractivos)
         }
     }
@@ -98,7 +115,8 @@ extension atractivosViewController:UITableViewDataSource{
         
         let miCeldiniLabel = tablaAtractivos[indexPath.row]
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "celdaAtractivinis", for: indexPath) as! celdaAtractivos
-        cell.labelTexto.text = miCeldiniLabel.nombreRegion
+        //cell.labelTexto.text = miCeldiniLabel.nombreRegion
+        cell.imagenAtr.image = miCeldiniLabel.imagen
         return cell
         
     }

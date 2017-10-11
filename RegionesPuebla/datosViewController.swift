@@ -19,6 +19,7 @@ class datosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadImage(nombreImg: nombreImagen)
+        self.title = "DATOS GENERALES"
     }
 
     override func didReceiveMemoryWarning() {

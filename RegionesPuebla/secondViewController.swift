@@ -28,6 +28,7 @@ class secondViewController: UIViewController {
         /*View Controller de datos generales*/
         if segue.identifier == "pantallaDatos"{
             let destinationVC = segue.destination as! datosViewController
+            //destinationVC.imagenDatos = regionSel
             destinationVC.miRegion = regionSelected.shortName
         }
         
@@ -37,6 +38,7 @@ class secondViewController: UIViewController {
             destinationVC2.regionSeleccionada = regionSelected.shortName
             destinationVC2.numOfAtr = regionSelected.numItems
             destinationVC2.idRegion = regionSelected.id
+            destinationVC2.elNombre = regionSelected.shortName
         }
     }
 

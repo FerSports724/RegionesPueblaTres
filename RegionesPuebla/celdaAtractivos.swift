@@ -11,7 +11,7 @@ import UIKit
 class celdaAtractivos: UITableViewCell {
     
     @IBOutlet var imagenAtr: UIImageView!
-    @IBOutlet var labelTexto: UILabel!
+    //@IBOutlet var labelTexto: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

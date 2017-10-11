@@ -14,13 +14,13 @@ class modeloAtractivos{
     var nombreRegion:String!
     //var nombreCorto:String!
     var numOfAtr:Int!
-    //var imagen:UIImage!
+    var imagen:UIImage!
     
-    init(nombreRegion:String, /*nombreCorto:String,*/ numOfAtr:Int/*, imagen:UIImage*/){
+    init(nombreRegion:String, /*nombreCorto:String,*/ numOfAtr:Int, imagen:UIImage){
         self.nombreRegion = nombreRegion
         //self.nombreCorto = nombreCorto
         self.numOfAtr = numOfAtr
-        //self.imagen = imagen
+        self.imagen = imagen
     }
     
 }
