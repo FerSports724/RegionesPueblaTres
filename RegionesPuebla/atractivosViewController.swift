@@ -12,6 +12,8 @@ class atractivosViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
+    var miTablaDeAtractivos:modeloAtractivos!
+    
     var tablaAtractivos:[modeloAtractivos] = []
     
     var laImagen:UIImage!
@@ -26,12 +28,12 @@ class atractivosViewController: UIViewController {
     var arrayParaPoner:[String] = []
     
     /*Array que contienen los nombres de los atractivos*/
-    let arrayNorte:[String] = ["Zacatlan", "Chignahuapan", "Huauchinango", "Xicotepec", "Pahuatlán"]
+    let arrayNorte:[String] = ["Zacatlan", "Chignahuapan", "Xicotepec", "Huauchinango", "Pahuatlan"]
     let arrayNororiental:[String] = ["Cuetzalan", "Yohualichan", "Zacapoaxtla", "Tlatlauquitepec"]
     let arraySerdan:[String] = ["Aljojuca", "Chalchicomula", "Atzitzintla", "Tecamachalco", "Tepeyahualco"]
     let arrayAngelopolis:[String] = ["Puebla", "SanAndresCholula", "SanPedroCholula", "Cuautinchan", "Tecali", "Huejotzingo", "Tepeaca", "Calpan"]
     let arrayAtlixco:[String] = ["Atlixco", "Huaquechula", "Izucar", "Tochimilco", "Tepapayeca"]
-    let arrayMixteca:[String] = ["Huatlatlauca", "Acatlan", "Tepexi", "Molcaxac"]
+    let arrayMixteca:[String] = ["Molcaxac", "Acatlan", "Tepexi", "Huatlatlauca"]
     let arrayTehuacan:[String] = ["Tehuacan", "Zapotitlan", "SanJuanRaya", "Zoquitlan", "SanBernardinoLagunas", "Coxcatlan", "Tlacotepec"]
     
     /*Array con el número de atractivos que tendrá cada elemento de cada región*/
@@ -42,12 +44,8 @@ class atractivosViewController: UIViewController {
         
         /*TÍTULO DE BARRA DE NAVEGACIÓN*/
         self.title = "ATRACTIVOS"
-        
-        print("\(numOfAtr ?? 0)")
+
         armarArray()
-        
-        print("--------------------------------------")
-        print("\(tablaAtractivos.count)")
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,8 +53,6 @@ class atractivosViewController: UIViewController {
     }
     
     func armarArray(){
-        
-        var miTablaDeAtractivos:modeloAtractivos
         
         aPoner = 0
         nombreAtr = ""
@@ -85,12 +81,9 @@ class atractivosViewController: UIViewController {
         aPoner = numOfAtr! - 1
         
         for x in 0...aPoner{
-            print(x)
-            print(arrayParaPoner[x])
             
             nombreImg = ""
             nombreImg = "atr" + "\(elNombre)" + "\(x)" + ".jpg"
-            print("\(nombreImg!)")
             
             laImagen = UIImage(named: nombreImg)
             
@@ -115,9 +108,21 @@ extension atractivosViewController:UITableViewDataSource{
         
         let miCeldiniLabel = tablaAtractivos[indexPath.row]
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "celdaAtractivinis", for: indexPath) as! celdaAtractivos
-        //cell.labelTexto.text = miCeldiniLabel.nombreRegion
         cell.imagenAtr.image = miCeldiniLabel.imagen
         return cell
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "segueAtractivos"{
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                let selectedAtr = self.tablaAtractivos[indexPath.row]
+                let destinationViewC = segue.destination as! detalleAtrViewController
+                destinationViewC.nombreSeleccionado = selectedAtr.nombreRegion
+            }
+        }
         
     }
 }

@@ -16,7 +16,6 @@ class secondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         laRegion = regionSelected.shortName
-        print("\(laRegion!)")
     }
 
     override func didReceiveMemoryWarning() {
